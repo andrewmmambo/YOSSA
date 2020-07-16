@@ -1,2 +1,3 @@
-# YOSSA
-An E-commerce clothing website
+An E-commerce website for body shape wear and other clothing.
+
+
