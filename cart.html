@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contact Us</title>
+        <title>Cart</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,16 +38,16 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-	<body style="background-color:black;">
 		<header>
+			<body style="background-color:black;"> 
 			<div class="header-top-area ptb-10 hidden-xs header-top-area-4" style ="background-color:black">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-4 col-sm-5">
-							<div class="header-top-right header-top-left-4">
+							<div class="header-top-right header-top-left-4">								
 							</div>
 						</div>					
-						<div class="col-lg-9 col-md-8 col-sm-7 header-top-right-4">
+						<div class="col-lg-9 col-md-8 col-sm-7 header-top-right-4">							
 							<div class="header-top-left">
 								<ul>
                                 <li class="click_menu"><a href="#">My Account <i class="fa fa-angle-down"></i></a>
@@ -135,7 +135,7 @@
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="mainmenu hidden-xs">
 							<nav>
-								<ul>
+								<ul>							
 									<li><a href="index.html">Home</a>
 										<div class="megamenu">																				
 										</div>
@@ -182,65 +182,120 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- mainmenu-area-end -->
-		<!-- page-title-wrapper-start -->
-		<div class="page-title-wrapper">
+		</div>		
+		<div class="entry-header-area pt-40">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="page-title">
-							<h3>Contact Us</h3>
+					<div class="col-md-12">
+						<div class="entry-header">
+							<h1 class="entry-title">Cart</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- page-title-wrapper-end -->
-		<!-- google-map-area-start -->
-		<div class="google-map-area ptb-80">		
+		<!-- entry-header-area end -->		
+		<!-- cart-main-area start -->
+		<div class="cart-main-area ptb-40">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
-						<div class="google-map" id="map">
-							
-						</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<form action="#">				
+							<div class="table-content table-responsive">
+								<table>
+									<thead>
+										<tr>
+											<th class="product-thumbnail">Image</th>
+											<th class="product-name">Product</th>
+											<th class="product-price">Price</th>
+											<th class="product-quantity">Quantity</th>
+											<th class="product-subtotal">Total</th>
+											<th class="product-remove">Remove</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="product-thumbnail"><a href="#"><img src="img/wishlist/1.jpg" alt="" /></a></td>
+											<td class="product-name"><a href="#">Kente headwrap</a></td>
+											<td class="product-price"><span class="amount">R165.00</span></td>
+											<td class="product-quantity"><input type="number" value="1" /></td>
+											<td class="product-subtotal">R165.00</td>
+											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+										</tr>
+										<tr>
+											<td class="product-thumbnail"><a href="#"><img src="img/wishlist/2.jpg" alt="" /></a></td>
+											<td class="product-name"><a href="#">Vezzle crop top</a></td>
+											<td class="product-price"><span class="amount">R50.00</span></td>
+											<td class="product-quantity"><input type="number" value="1" /></td>
+											<td class="product-subtotal">R50.00</td>
+											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+									<div class="buttons-cart">
+										<input type="submit" value="Update Cart" />
+										<a href="#">Continue Shopping</a>
+									</div>
+									<div class="coupon">
+										<h3>Coupon</h3>
+										<p>Enter your coupon code if you have one.</p>
+										<input type="text" placeholder="Coupon code" />
+										<input type="submit" value="Apply Coupon" />
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+									<div class="cart_totals">
+										<h2>Cart Totals</h2>
+										<table>
+											<tbody>
+												<tr class="cart-subtotal">
+													<th>Subtotal</th>
+													<td><span class="amount">R215.00</span></td>
+												</tr>
+												<tr class="shipping">
+													<th>Shipping</th>
+													<td>
+														<ul id="shipping_method">
+															<li>
+																<input type="radio" /> 
+																<label>
+																	Flat Rate: <span class="amount">R7.00</span>
+																</label>
+															</li>
+															<li>
+																<input type="radio" /> 
+																<label>
+																	Free Shipping
+																</label>
+															</li>
+															<li></li>
+														</ul>
+														<p><a class="shipping-calculator-button" href="#">Calculate Shipping</a></p>
+													</td>
+												</tr>
+												<tr class="order-total">
+													<th>Total</th>
+													<td>
+														<strong><span class="amount">R215.00</span></strong>
+													</td>
+												</tr>											
+											</tbody>
+										</table>
+										<div class="wc-proceed-to-checkout">
+											<a href="#">Proceed to Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>	
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- google-map-area-end -->
-		<!-- contuct-form-area-start -->
-			<div class="contuct-form-area pb-80">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="contuct-form">
-								<form>
-									<div class="form-group contuct_f">
-										<label for="exampleInputEmail1">Name <span>*</span></label>
-										<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">Email <span>*</span></label>
-										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
-									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">Phone Number</label>
-										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
-									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">What is on your mind? <span>*</span></label>
-										<textarea class="form-control" rows="3"></textarea>
-									</div>
-									<button type="submit" class="btn btn-default contact-btn">Submit</button>
-								</form>						
-							</div>						
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- contuct-form-area-end -->
+		<!-- cart-main-area end -->	
 		<!-- contact-area-start -->
 		<div class="contact-area ptb-40" style ="background-color:black">
 			<div class="container">
@@ -288,11 +343,11 @@
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>								
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="col-lg-2 col-md-3 hidden-sm col-xs-12 mar_b-30">
+					</div>					
+					<div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
 						<div class="footer-wrapper">
 							<div class="footer-title">
 								<a href="#"><h3>useful links</h3></a>
@@ -306,7 +361,7 @@
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</div>
@@ -348,124 +403,7 @@
 		<!-- wow js -->
         <script src="js/wow.min.js"></script>
 		<!-- scrolly js -->
-        <script src="js/jquery.scrolly.js"></script>
-		<!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0gvtDVpKHrPUAWQ6tT8DT12ny_TDSkk "></script>
-		<script>
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    scrollwheel: false,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-					styles: [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#444444"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#46bcec"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    }
-]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
-		</script>>			
+        <script src="js/jquery.scrolly.js"></script>		
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->

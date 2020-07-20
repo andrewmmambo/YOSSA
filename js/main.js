@@ -517,14 +517,14 @@
     sliderRange.slider({
         range: true,
         min: 40,
-        max: 600,
-        values: [60, 570],
+        max: 2000,
+        values: [40, 1500],
         slide: function(event, ui) {
-            ammout.val("$" + ui.values[0] + " - $" + ui.values[1]);
+            ammout.val("R" + ui.values[0] + " - R" + ui.values[1]);
         }
     });
-    ammout.val("$" + sliderRange.slider("values", 0) +
-        " - $" + sliderRange.slider("values", 1));
+    ammout.val("R" + sliderRange.slider("values", 0) +
+        " - R" + sliderRange.slider("values", 1));
 
     /*--------------------------
      scrollUp

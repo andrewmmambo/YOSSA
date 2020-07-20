@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contact Us</title>
+        <title>Customer Account</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="css/linearicons-icon-font.min.css">
 		<!-- font-awesome css -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
+         <link rel="stylesheet" href="css/bootstrap-social.css">
 		<!-- style css -->
 		<link rel="stylesheet" href="style.css">
 		<!-- responsive css -->
@@ -44,10 +45,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-4 col-sm-5">
-							<div class="header-top-right header-top-left-4">
+							<div class="header-top-right header-top-left-4">								
 							</div>
 						</div>					
-						<div class="col-lg-9 col-md-8 col-sm-7 header-top-right-4">
+						<div class="col-lg-9 col-md-8 col-sm-7 header-top-right-4">							
 							<div class="header-top-left">
 								<ul>
                                 <li class="click_menu"><a href="#">My Account <i class="fa fa-angle-down"></i></a>
@@ -149,7 +150,7 @@
 										</div>
 									</li>																		
 									<li><a href="contact.html">contact</a></li>									
-								</ul
+								</ul>
 							</nav>
 						</div>
 					</div>
@@ -176,7 +177,7 @@
 										</div>
 									</li>																		
 									<li><a href="contact.html">contact</a></li>									
-								</ul
+								</ul>
 							</nav>
 						</div>
 					</div>
@@ -188,60 +189,213 @@
 		<div class="page-title-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="page-title">
-							<h3>Contact Us</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- page-title-wrapper-end -->
-		<!-- google-map-area-start -->
-		<div class="google-map-area ptb-80">		
-			<div class="container">
-				<div class="row">
 					<div class="col-lg-12">
-						<div class="google-map" id="map">
-							
+						<div class="page-title">
+							<h3>Create New Customer Account</h3>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- google-map-area-end -->
-		<!-- contuct-form-area-start -->
-			<div class="contuct-form-area pb-80">
+		</div>		
+			<div class="login-area ptb-80">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="contuct-form">
+					<div class="container">
+  <div  class="col-sm-12">
+        <h3>Edit Profile</h3>
+        <hr/>
+        <div class="col-sm-3"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left">
+            <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+             <li><a href="#chnage_passwrd" data-toggle="tab">Change Password</a></li>
+            <li><a href="#deliveryaddress" data-toggle="tab">Delivery Address</a></li>
+            <li><a href="#reentorders" data-toggle="tab">Recent Orders</a></li>
+         <li><a href="#returnorders" data-toggle="tab">Return Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="profile">
+            <div class="login-form">
 								<form>
-									<div class="form-group contuct_f">
-										<label for="exampleInputEmail1">Name <span>*</span></label>
-										<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+									<div class="form-group login-page">
+										<label for="">First Name <span>*</span></label>
+										<input type="text" class="form-control" id="">
 									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">Email <span>*</span></label>
-										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
-									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">Phone Number</label>
-										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
-									</div>
-									<div class="form-group contuct_f">
-										<label for="exampleInputPassword1">What is on your mind? <span>*</span></label>
-										<textarea class="form-control" rows="3"></textarea>
-									</div>
-									<button type="submit" class="btn btn-default contact-btn">Submit</button>
+									<div class="form-group login-page">
+										<label for="">Last Name <span>*</span></label>
+										<input type="email" class="form-control" id="">
+									</div>																
+									<div class="form-group login-page">
+										<label for="">Email <span>*</span></label>
+										<input type="text" class="form-control" id="">
+									</div>								
+									
+									<button type="submit" class="btn btn-default login-btn">Submit</button>
 								</form>						
-							</div>						
-						</div>
-					</div>
+							</div>
+							
+            
+            </div>
+            
+             <div class="tab-pane" id="chnage_passwrd">
+             <form>
+									<div class="form-group login-page">
+										<label for="">Old Password<span>*</span></label>
+										<input type="password" class="form-control" id="">
+									</div>
+									<div class="form-group login-page">
+										<label for="">New Password<span>*</span></label>
+										<input type="password" class="form-control" id="">
+									</div>
+																	
+									<div class="form-group login-page">
+										<label for="">Confirm Password<span>*</span></label>
+										<input type="password" class="form-control" id="">
+									</div>								
+									
+									<button type="submit" class="btn btn-default login-btn">Submit</button>
+								</form>	
+             
+             </div>
+            
+            
+            <div class="tab-pane" id="deliveryaddress">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            
+             <h4 class="profile_addresstab">Choose Address</h4>
+            
+                               <div class="col-md-6 col-sm-6 col-xs-12 multiple_address">
+                                <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 228 Somerset Street, New Brunswick, NJ 08901 USA
+</label>
+                               </div>
+<div class="col-md-6 col-sm-6 col-xs-12 multiple_address">
+                                <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 11 Lyncroft Road Queens Park West, Bulawayo, Zimbabwe
+</label>
+                               </div>
+                               
+                               
+                               <div class="col-md-6 col-sm-6 col-xs-12 multiple_address">
+                                <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 228 Somerset Street, New Brunswick, NJ 08901 USA
+</label>
+                               </div>
+                               
+                               
+                               <div class="col-md-6 col-sm-6 col-xs-12 multiple_address">
+                                <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 11 Lyncroft Road Queens Park West, Bulawayo, Zimbabwe
+</label>
+                               </div>
+
+                                </div>
+                                
+                                
+                             
+             <div class="col-md-12 col-sm-12">
+             
+             <h4 class="profile_addresstab">Enter New Address Here</h4>
+             
+             <div class="col-md-6">
+										<div class="checkout-form-list">
+											<label>First Name <span class="required">*</span></label>										
+											<input type="text" placeholder="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="checkout-form-list">
+											<label>Last Name <span class="required">*</span></label>										
+											<input type="text" placeholder="" />
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="checkout-form-list">
+											<label>Address <span class="required">*</span></label>
+											<input type="text" placeholder="Street address" />
+										</div>
+									</div>             
+             </div>                  									                                          
+            </div>
+            
+            <div class="tab-pane" id="reentorders">
+            <div class="wishlist-table table-responsive">
+									<table>
+										<thead>
+											<tr>
+												<th class="product-remove"><span class="nobr">Remove</span></th>
+												<th class="product-thumbnail">Image</th>
+												<th class="product-name"><span class="nobr">Product Name</span></th>
+                                                <th class="product-name"><span class="nobr">Order No.</span></th>
+												<th class="product-price"><span class="nobr"> Unit Price </span></th>											
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="product-remove"><a href="#">x</a></td>
+												<td class="product-thumbnail"><a href="#"><img src="img/wishlist/1.jpg" alt="" /></a></td>
+												<td class="product-name"><a href="#">Kente headwrap</a></td>
+                                                <td class="product-name"><a href="#">Kente headwrap</a></td>
+												<td class="product-price"><span class="amount">R35.00</span></td>												
+											</tr>
+											<tr>
+												<td class="product-remove"><a href="#">x</a></td>
+												<td class="product-thumbnail"><a href="#"><img src="img/wishlist/2.jpg" alt="" /></a></td>
+												<td class="product-name"><a href="#">Vezzle crop top</a></td>
+                                                 <td class="product-name"><a href="#">Vezzle crop top</a></td>
+												<td class="product-price"><span class="amount">R50.00</span></td>												
+											</tr>
+										</tbody>
+										
+									</table>
+								</div>
+            
+            </div>
+            
+            <div class="tab-pane" id="returnorders">
+            <div class="wishlist-table table-responsive">
+									<table>
+										<thead>
+											<tr>																								
+												<th class="product-name"><span class="nobr">Product Name</span></th>
+                                                <th class="product-name"><span class="nobr">Order No.</span></th>
+												<th class="product-price"><span class="nobr"> Unit Price </span></th>
+                                                <th class="product-remove"><span class="nobr">Check Process</span></th>												
+										</thead>
+										<tbody>
+											<tr>
+												<!--<td class="product-remove"><a href="#">x</a></td>-->
+												
+												<td class="product-name"><a href="#">Kente headwrap</a></td>
+                                                <td class="product-name"><a href="#">Kente headwrap</a></td>
+												<td class="product-price"><span class="amount">R35.00</span></td>
+                                               <td class="product-name"><a href="#">Check Process</a></td>												
+											</tr>
+											<tr>
+												<!--<td class="product-remove"><a href="#">x</a></td>-->
+												
+												<td class="product-name"><a href="#">Vezzle crop top</a></td>
+                                                 <td class="product-name"><a href="#">Vezzle crop top</a></td>
+												<td class="product-price"><span class="amount">R50.00</span></td>
+                                                <td class="product-name"><a href="#">Check Process</a></td>												
+											</tr>
+										</tbody>										
+									</table>
+								</div>           
+            </div>                        
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+	</div><!-- /container -->
 				</div>
 			</div>
-		<!-- contuct-form-area-end -->
-		<!-- contact-area-start -->
+		
 		<div class="contact-area ptb-40" style ="background-color:black">
 			<div class="container">
 				<div class="row">
@@ -288,11 +442,11 @@
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>								
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-2 col-md-3 hidden-sm col-xs-12 mar_b-30">
+					<div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
 						<div class="footer-wrapper">
 							<div class="footer-title">
 								<a href="#"><h3>useful links</h3></a>
@@ -306,6 +460,7 @@
 								</ul>
 							</div>
 						</div>
+					</div>					
 					</div>
 				</div>
 			</div>
@@ -342,133 +497,19 @@
 		<!-- jquery-ui js -->
         <script src="js/jquery-ui.min.js"></script>
 		<!-- nivo.slider js -->
-        <script src="js/jquery.nivo.slider.js"></script>		
+        <script src="js/jquery.nivo.slider.js"></script>
 		<!-- magnific-popup js -->
         <script src="js/jquery.magnific-popup.min.js"></script>		
 		<!-- wow js -->
         <script src="js/wow.min.js"></script>
 		<!-- scrolly js -->
-        <script src="js/jquery.scrolly.js"></script>
-		<!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0gvtDVpKHrPUAWQ6tT8DT12ny_TDSkk "></script>
-		<script>
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    scrollwheel: false,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-					styles: [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#444444"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#46bcec"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    }
-]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
-		</script>>			
+        <script src="js/jquery.scrolly.js"></script>		
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
         <script src="js/main.js"></script>
+        
+        
+        
     </body>
 </html>
