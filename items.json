@@ -1,0 +1,40 @@
+{
+  "shapewear": [
+    {
+      "id": 1,
+      "name": "Yossa Romper",
+      "price": 60000,
+      "imgName": "1.png"
+    },
+    {
+      "id": 2,
+      "name": "Yossa Crop Top",
+      "price": 60000,
+      "imgName": "1.png"
+    },
+    {
+      "id": 3,
+      "name": "Yossa Sleeveless Jumpsuit",
+      "price": 25000,
+      "imgName": "1.png"
+    },
+    {
+      "id": 4,
+      "name": "Yossa Oh So Tight Short",
+      "price": 30000,
+      "imgName": "1.png"
+    },
+	{
+      "id": 5,
+      "name": "Yossa Leggings",
+      "price": 40000,
+      "imgName": "1.png"
+    },
+	{
+      "id": 6,
+      "name": "Yossa Turtleneck Crop Top",
+      "price": 60000,
+      "imgName": "1.png"
+    },
+  ]
+}
